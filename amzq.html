@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body
+    {
+       background-color: white;
+    }
+    .head1
+    {
+        font-size: 20px;
+        color: black;
+    }
+    .navbar1
+    {
+        display:flex;
+        justify-content: space-between;
+        background-color:aqua;
+        background-attachment: fixed;
+    }
+    #i1,#i2,#i3,#i4
+    {
+        font-size: 25px;
+        margin-right: 50px;
+        margin-top: 30px;
+        text-decoration: none;
+    }
+    .links1
+    {
+        margin-top: 2px;
+        display:flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .links1 a:hover
+    {
+        color: black;
+    }
+    
+.collapsible {
+  background-color:white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-family: 'poppins';
+}
+.content {
+  padding: 0px 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color:aqua;
+  font-family: 'poppins';
+}
+#m22{
+  font-size: 20px;
+}
+#i1
+{
+  color: aqua;
+}
+#h2s{
+  margin-top: 50px;
+}
+#i111
+{
+    text-align: center;
+    margin-top: 40px;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <div class="navbar1">
+        <div class="head1">
+        <h1>Asked Questions</h1>
+        </div>
+        <div class="links1">
+            <a id="i1" href="mpf2.html">Home</a></li>
+            <a id="i2" href="student.html">Students</a></li>
+            <a id="i3" href="companies.html">Companies</a></li>
+            <a id="i4" href="pc.html">Placement Calender</a></li>
+        </div>
+        </div>
+        </nav>
+    <h1 style="background-color: aqua;" id="i111">THE QUERIES FREQUENTLY ASKED TO THE PERSON WHO GOT PLACED</h1>
+
+<h2 id="h2s">AMAZON INTERVIEW </h2>
+<button class="collapsible"><li>WHEN YOU STARTED CODING?</li><hr>    
+</button>
+<div class="content">
+  <p id="m22">"I Started my coding in my 3rd semester "</p>
+</div>
+<button class="collapsible"><li>WHAT GAVE YOU INSPIRATION FOR CODING?</li><hr></button>
+<div class="content">
+  <P id="m22"> "During my 3rd semester we were held by lockdown.At that time Vignan conducted coding hackthons containing 10 questions in the time of 2 days duration that become my inspiration to do coding.."</p>
+</div>
+<button class="collapsible"><li>WHICH LANGUAGE YOU PREFERED MOST? WhY?</li><hr></button>
+<div class="content">
+  <p id="m22">" I mostly prefer C++ with Data strutures because i found it affective and   it performs  quickly"</p>
+</div>
+</div>
+<button class="collapsible"><li>WHICH  SUBJECTS SHOULD BE CONCENTRATED IN INTERVIEW POINT OF VIEW?</li><hr></button>
+<div class="content">
+  <p id="m22">" We should concentrate on OS,DBMS,CN,SQL queries"</p>
+</div>
+</div>
+<button class="collapsible"><li>WHICH PLATFORMS YOU USED FOR FOR PRACTICE?</li><hr></button>
+<div class="content">
+  <p id="m22">"Hackerrank for basics after completion of hackerrank,Start competative coding in Codechef and Codeforces"</p>
+</div>
+</div>
+<button class="collapsible"><li>TELL ME ABOUT YOUR PROJECTS ?</li><hr></button>
+<div class="content">
+  <p id="m22">" I did my mini project in 5th semester and it helps in interview.I developed E commerce website and covid tracker"</p>
+</div>
+</div>
+<button class="collapsible"><li>WHAT TYPE OF QUESTIONS ASKED IN INTERVIEW?</li><hr></button>
+<div class="content">
+  <p id="m22">"Hash map,and 2 DSA questions"</p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
