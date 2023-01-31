@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>MPF</title>
+    <style>
+    body
+    {
+       background-color: white;
+    }
+    .navbar1
+    {
+        display:flex;
+        justify-content: space-between;
+        background-color:aqua;
+        background-attachment: fixed;
+    }
+    .links1
+    {
+        margin-top: 15px;
+        display:flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    #i1,#i2,#i3
+    {
+        font-size: 25px;
+        margin-right: 50px;
+        margin-top: 30px;
+        text-decoration: none;
+    }
+    .links1 a:hover
+    {
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="navbar1">
+    <div class="head1">
+    <img src="logo.png" alt="img" id="img1">
+    </div>
+    <div class="links1">
+        <a id="i1" href="">Home</a></li>
+        <a id="i2" href="">Contact Us</a></li>
+        <a id="i3" href="">About Us</a></li>
+    </div>
+    </div>
+    </nav>
+    <hr>
+    <h1>Contact Details:</h1>
+    <form action="mailto:nanda15102002@gmail.com" method="post" enctype="text/plain">
+        <label>Your Name:</label>
+        <input type="text"><br>
+        <label>Your Mail:</label>
+        <input type="text"><br>
+        <label>Your Message:</label>
+        <textarea rows="20" cols="40"></textarea>
+        <input type="submit"><br>
+    </form>
+</body>
+</html>
